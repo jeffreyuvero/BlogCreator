@@ -1,0 +1,98 @@
+{% extends "base.twig" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block addl_css %} 
+     <link href="{{ base_url() }}assets/css/blog-home.css" rel="stylesheet">
+    <style type="text/css">
+        #well{
+            background-color: #70b4df;
+        }
+        #h1{
+            color: #ffffff;
+            text-decoration: underline;
+            text-shadow: 2px 2px #337ab7;
+
+        }
+
+        #h2{
+            color: #f5f5f5;
+        }
+
+    </style>
+{% endblock %}
+
+{% block addl_js %} {# place additional js here #}
+{% endblock %}
+
+{% block embedded_js %}
+{% endblock %}
+
+
+{% block content %}
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+
+          <!-- Title -->
+          <br> 
+          <h3 class="my-4">
+            <div class="alert alert-primary">
+                Contact Us
+            </div>
+          </h3>
+
+            <form id="contact-form" method="post" action="contact.php" role="form">
+
+                <div class="messages"></div>
+
+                <div class="controls">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_name">Firstname *</label>
+                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_lastname">Lastname *</label>
+                                <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_email">Email *</label>
+                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_phone">Phone</label>
+                                <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="form_message">Message *</label>
+                                <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="submit" class="btn btn-success btn-send" value="Send message">
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+{% endblock %}

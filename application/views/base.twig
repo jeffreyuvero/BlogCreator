@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{{title}}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ base_url() }}assets/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->  
+    <link href="{{ base_url() }}assets/css/1-col-portfolio.css" rel="stylesheet">
+    <link href="{{ base_url() }}assets/css/blog-home.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+     <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="{{ site_url() }}"> 
+            <img class="card-img-top" src="{{ base_url() }}assets/image/logo.png" width="50" height="65 " alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{{ site_url() }}">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site_url() }}\index\blog">
+                Blog
+            </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site_url() }}\index\about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site_url() }}\index\contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+
+
+ {% block content %}{% endblock %}
+
+ 
+  <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+          <!-- Categories Widget -->
+          <div class=" card card-inverse card-primary my-4">
+            <h5 class="card-header">Categories</h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#">Politics</a>
+                    </li>
+                    <li>
+                      <a href="#">General</a>
+                    </li>
+                    <li>
+                      <a href="#">Traffic</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#">Election</a>
+                    </li>
+                    <li>
+                      <a href="#">Police Report</a>
+                    </li>
+                    <li>
+                      <a href="#">Showbiz</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Side Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">About the author</h5>
+              
+            <div class="card-body">
+              <img src="{{ base_url() }}assets/image/Portrait_Placeholder.png" class="img-circle" alt="author" width="100" height="100">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar. Tincidunt arcu non sodales neque sodales. A erat nam at lectus urna duis convallis convallis. Sit amet aliquam id diam maecenas ultricies mi eget. Proin fermentum leo vel orci porta. Id leo in vitae turpis massa sed. Id diam vel quam elementum pulvinar. Nulla facilisi etiam dignissim diam quis enim. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->   
+
+    
+<!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{ base_url() }}assets/js/jquery/jquery.min.js"></script>
+    <script src="{{ base_url() }}assets/js/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

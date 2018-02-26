@@ -1,0 +1,82 @@
+{% extends "base.twig" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block addl_css %} 
+     <link href="{{ base_url() }}assets/css/blog-home.css" rel="stylesheet">
+    <style type="text/css">
+        #well{
+            background-color: #70b4df;
+        }
+        #h1{
+            color: #ffffff;
+            text-decoration: underline;
+            text-shadow: 2px 2px #337ab7;
+
+        }
+
+        #h2{
+            color: #f5f5f5;
+        }
+
+    </style>
+{% endblock %}
+
+{% block addl_js %} {# place additional js here #}
+{% endblock %}
+
+{% block embedded_js %}
+{% endblock %}
+
+
+{% block content %}
+        <div class="col-md-8">
+    	    <br> 
+          <h3 class="my-4">
+            <div class="alert alert-primary">
+                About the author
+            </div>
+          </h3>
+
+          <!-- about us -->
+          <div class="row">
+      		<div class="col-md-3">
+      			<img src="{{ base_url() }}assets/image/Portrait_Placeholder.png" class="img-circle" alt="author" width="100" height="100" />
+      		</div>
+      		<div class="col-md-9">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar. Tincidunt arcu non sodales neque sodales. A erat nam at lectus urna duis convallis convallis. Sit amet aliquam id diam maecenas ultricies mi eget. Proin fermentum leo vel orci porta. Id leo in vitae turpis massa sed. Id diam vel quam elementum pulvinar. Nulla facilisi etiam dignissim diam quis enim. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper.
+      		</div>
+          </div>
+          <hr>
+          <div class="row">
+      		<div class="col-md-3">
+      			<img src="{{ base_url() }}assets/image/Portrait_Placeholder.png" class="img-circle" alt="author" width="100" height="100" />
+      		</div>
+      		<hr>
+      		<div class="col-md-9">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar. Tincidunt arcu non sodales neque sodales. A erat nam at lectus urna duis convallis convallis. Sit amet aliquam id diam maecenas ultricies mi eget. Proin fermentum leo vel orci porta. Id leo in vitae turpis massa sed. Id diam vel quam elementum pulvinar. Nulla facilisi etiam dignissim diam quis enim. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper.
+      		</div>
+          </div>
+          <hr>
+          <div class="row">
+      		<div class="col-md-3">
+      			<img src="{{ base_url() }}assets/image/Portrait_Placeholder.png" class="img-circle" alt="author" width="100" height="100" />
+      		</div>
+      		<div class="col-md-9">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar. Tincidunt arcu non sodales neque sodales. A erat nam at lectus urna duis convallis convallis. Sit amet aliquam id diam maecenas ultricies mi eget. Proin fermentum leo vel orci porta. Id leo in vitae turpis massa sed. Id diam vel quam elementum pulvinar. Nulla facilisi etiam dignissim diam quis enim. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper.
+      		</div>
+          </div>
+
+
+       {#    <!-- Pagination -->
+          <ul class="pagination justify-content-center mb-4">
+            <li class="page-item">
+              <a class="page-link" href="#">&larr; Older</a>
+            </li>
+            <li class="page-item disabled">
+              <a class="page-link" href="#">Newer &rarr;</a>
+            </li>
+          </ul>
+ #}
+        </div>
+{% endblock %}
